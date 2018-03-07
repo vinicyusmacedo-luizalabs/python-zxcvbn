@@ -142,7 +142,7 @@ def enumerate_l33t_subs(table):
                 deduped.append(sub)
         return deduped
 
-    keys = table.keys()
+    keys = list(table.keys())
     while len(keys) > 0:
         first_key = keys[0]
         rest_keys = keys[1:]
